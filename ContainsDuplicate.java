@@ -30,7 +30,7 @@ public class ContainsDuplicate {
 		if(nums==null || nums.length==0)
 			   return false;
 	    
-	    Arrays.sort(nums);
+	    	Arrays.sort(nums);
 			
 		for(int i = 0; i < nums.length - 1; i++) {
 				
@@ -49,17 +49,17 @@ public class ContainsDuplicate {
 	//solution 3 (optimized): use hash set
 	 static boolean containsDuplicate3(int[] nums) {
 	        
-	   if(nums==null || nums.length==0)
-		   return false;
+	   	if(nums==null || nums.length==0)
+			return false;
 	 
-	    HashSet<Integer> set = new HashSet<Integer>();
-	    for(int i: nums){
-	        if(!set.add(i)){
-	            return true;
-	        }
-	    }
+	    	HashSet<Integer> set = new HashSet<Integer>();
+	    	for(int i: nums){
+	        	if(!set.add(i)){
+	            		return true;
+			}
+		}
 	 
-	    return false;
+	    	return false;
 	        
 	    }
 
